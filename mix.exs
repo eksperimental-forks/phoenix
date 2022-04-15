@@ -70,6 +70,7 @@ defmodule Phoenix.MixProject do
   defp deps do
     [
       {:plug, "~> 1.10"},
+      {:mime, "~> 1.0"}, # force this version to work with Elixir v1.9, this can be removed when Elixir v1.10+ is required
       {:plug_crypto, "~> 1.2"},
       {:telemetry, "~> 0.4 or ~> 1.0"},
       {:phoenix_pubsub, "~> 2.1"},
